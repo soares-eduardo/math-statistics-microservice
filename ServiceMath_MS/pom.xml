@@ -44,6 +44,6 @@
 	</build>
 	<properties>
 		<java.version>15</java.version>
-		<!-- <start-class>com.eduardosoares.serviceMath.ControllerMath</start-class> -->
+		<start-class>com.eduardosoares.serviceMath.ControllerMath</start-class>
 	</properties>
 </project>
