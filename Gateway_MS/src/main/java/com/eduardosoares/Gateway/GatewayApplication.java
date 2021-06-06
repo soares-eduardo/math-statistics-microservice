@@ -12,8 +12,8 @@ public class GatewayApplication {
 	@Bean
 	public RouteLocator myRoutes(RouteLocatorBuilder builder) {
 		return builder.routes()
-			.route(p -> p.path("/math/*").uri("http://localhost:8081"))
-			.route(p -> p.path("/statistics/*").uri("http://localhost:8082")).build();
+			.route(p -> p.path("/math/*").uri("http://serviceMath:8080"))
+			.route(p -> p.path("/statistics/*").uri("http://serviceStats:8080")).build();
 	}
 
 	public static void main(String[] args) {
