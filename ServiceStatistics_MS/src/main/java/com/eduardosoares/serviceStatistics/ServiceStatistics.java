@@ -32,7 +32,6 @@ public class ServiceStatistics {
             e.printStackTrace();
         }
 
-        System.out.println("Bombou o request.");
         return (int) Double.parseDouble(response.body());
     }
 }
