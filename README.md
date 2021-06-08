@@ -20,7 +20,7 @@ This repository has two Spring Boot projects that communicate with each other to
 
 ## How to Run
 
-1. First you must get into each project and generate its jar, by typing the line below:
+1. First you must get into each project and generate their .jar, by typing the line below:
 
     `$ mvn clean package`
 
