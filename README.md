@@ -10,28 +10,26 @@ This repository has two Spring Boot projects that communicate with each other to
 
 ## Endpoints
 
-Type the values separeted by comma. For exemple: ?values=1,3,4,5
+### Get sum of n numbers
 
-### Calculate sum of n numbers
+- /math/sum?values=1,3,4,5
 
-/math/sum?values=
+### Get avg of n numbers
 
-### Calculate avg of n numbers
-
-/statistics/avg?values=
+- /statistics/avg?values=1,3,4,5
 
 ## How to Run
 
 1. First you must get into each project and generate its jar, by typing the line below:
 
-`$ mvn clean package`
+    `$ mvn clean package`
 
 2. Then, it's time to generate the math, stats and gateway docker image. Inside of each project, type:
 
-`$ docker build -t image:latest .`
+    `$ docker build -t image:latest .`
 
 3. Inside the root folder, just run the code bellow to make the three images avaliable.
 
-`$ docker compose up`
+    `$ docker compose up`
 
 After these 3 steps, the endpoints will be avaliable on port 8080.
