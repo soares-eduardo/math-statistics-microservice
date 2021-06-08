@@ -23,7 +23,7 @@ public class ServiceStatistics {
 
         HttpClient client = HttpClient.newHttpClient();
         HttpRequest request = HttpRequest.newBuilder().GET()
-                .uri(URI.create("http://localhost:8080/math/sum?values=" + numbers)).build();
+                .uri(URI.create("http://host.docker.internal:8080/math/sum?values=" + numbers)).build();
         HttpResponse<String> response = null;
 
         try {
