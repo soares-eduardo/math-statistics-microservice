@@ -6,7 +6,7 @@ This repository has two Spring Boot projects that communicate with each other to
 
 - Java 15;
 - Spring Boot 2.4.6;
-- Docker 3.9;
+- Docker 3.9.
 
 ## Endpoints
 
